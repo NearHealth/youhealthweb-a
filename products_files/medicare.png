@@ -1,0 +1,30 @@
+<header class="gl-flex gl-flex-wrap gl-items-center gl-justify-between gl-gap-y-3 gl-my-5">
+<div class="gl-flex gl-flex-wrap gl-justify-between gl-gap-x-5 gl-gap-y-3 gl-w-full @md/panel:gl-flex-nowrap">
+<h1 class="gl-heading-1 !gl-m-0" data-testid="page-heading">
+Redirecting
+</h1>
+</div>
+</header>
+
+<div>
+<a href="https://projects.gitlab.io/auth?code=104beaf4a5d00ce7e1eb6ca86f02dec95108c5d86ab90d99f429252ae1fed7d7&amp;state=dK--KBARaZBlH2HQUgBo4w%3D%3D">Click here to redirect to https://projects.gitlab.io/auth?code=104beaf4a5d00ce7e1eb6ca86f02dec95108c5d86ab90d99f429252ae1fed7d7&amp;state=dK--KBARaZBlH2HQUgBo4w%3D%3D</a>
+</div>
+<script nonce="twNRgc6gQZ9VUsik23NsoQ==">
+//<![CDATA[
+(function() {
+  // Only permit a basic set of characters in the fragment.
+  const allowedRegex = /^#[\w-]+$/g;
+
+  const hash = window.location.hash;
+  let redirectUri = "https://projects.gitlab.io/auth?code=104beaf4a5d00ce7e1eb6ca86f02dec95108c5d86ab90d99f429252ae1fed7d7&state=dK--KBARaZBlH2HQUgBo4w%3D%3D";
+
+  if (window.location.hash && window.location.hash.search(allowedRegex) === 0 && redirectUri.indexOf('#') === -1) {
+    redirectUri = redirectUri + hash;
+  }
+
+  window.location = redirectUri;
+})();
+
+
+//]]>
+</script>
